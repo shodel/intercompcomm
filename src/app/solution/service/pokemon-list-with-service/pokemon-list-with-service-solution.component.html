@@ -1,0 +1,6 @@
+<h2>Service</h2>
+<h3>List-Component:</h3>
+<div *ngFor="let pokemon of this.monstas">
+  <div style="cursor: pointer;" (click)="selectPokemon(pokemon)">{{"#" + pokemon.nummer + ": " + pokemon.name}}</div>
+</div>
+<app-pokemon-detail-with-service-solution></app-pokemon-detail-with-service-solution>

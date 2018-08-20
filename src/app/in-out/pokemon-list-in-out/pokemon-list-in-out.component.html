@@ -1,0 +1,8 @@
+<h2>Input/Output</h2>
+<h3>List-Component:</h3>
+<div *ngFor="let pokemon of this.monstas">
+  <div style="cursor: pointer;" (click)="selectPokemon(pokemon)">{{"#" + pokemon.nummer + ": " + pokemon.name}}</div>
+</div>
+<br>
+<div>clicked on: {{detailClickedDate | date: 'hh:mm:ss' }}</div>
+<!-- TODO: Detail-Komponente einbinden mit Parametern -->
